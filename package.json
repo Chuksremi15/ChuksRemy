@@ -6,7 +6,8 @@
   "homepage": "https://chuksremi15.github.io/chuksremy",
   "scripts": {
     "start": "gulp",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d src",
+    "clean": "gh-pages-clean"
   },
   "author": "Chuks Remy",
   "license": "MIT",
