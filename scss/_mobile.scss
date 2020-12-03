@@ -150,7 +150,7 @@
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     margin: 0;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -159,7 +159,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    padding-top: 120px;
+    padding-top: 140px;
     padding-left: 20px;
     height: 100vh;
     transition: all 0.5s ease;
@@ -184,14 +184,14 @@
     &::after {
       content: '';
       position: absolute;
-      background: $secondary-color;
-      left: 15px;
+      background: $background-gray;
+      left: 0px;
       margin: 45px 0;
-      padding: 0 10px 0 10px;
+      padding: 0 160px 0 160px;
       border-radius: 13px;
-      height: 6px;
+      height: 2px;
       transition: all 0.5s ease;
-      opacity: 0;
+      opacity: 1;
     }
 
     &:hover {
@@ -207,7 +207,7 @@
         border-radius: 13px;
         height: 6px;
         transition: all 0.5s ease;
-        opacity: 1;
+        opacity: 0;
       }
     }
   }
@@ -359,32 +359,30 @@
       width: 40px;
       border-radius: 13px;
       height: 6px;
-      transition: all 0.3s ease;
     }
   }
 
-  // .navbar-logo.actived {
-  //   color: $dark;
-  //   font-size: 24px;
-  //   text-decoration: none;
-  //   position: relative;
-  //   transition: all 0.3s ease-out;
-  //   font-weight: bolder;
-  //   z-index: 3;
+  .navbar-logo.actived {
+    color: $dark;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-out;
+    font-weight: bolder;
+    z-index: 3;
 
-  //   &::after {
-  //     content: '';
-  //     position: absolute;
-  //     background: $secondary-color;
-  //     left: 0;
-  //     margin: 45px 0;
-  //     width: 40px;
-  //     border-radius: 13px;
-  //     height: 6px;
-  //     z-index: 3;
-  //     transition: all 0.3s ease;
-  //   }
-  // }
+    &::after {
+      content: '';
+      position: absolute;
+      background: $secondary-color;
+      left: 0;
+      margin: 45px 0;
+      width: 40px;
+      border-radius: 13px;
+      height: 6px;
+      z-index: 3;
+    }
+  }
   .showcase {
     height: 800px;
     background-color: $primary-color;
@@ -411,15 +409,16 @@
   .showcase-image {
     background-color: $dark;
     position: relative;
-    width: 350px;
+    width: 330px;
     height: 400px;
     border-radius: 5px;
+    justify-self: center;
     & > img {
       position: absolute;
       border-radius: 5px;
       height: 400px;
-      left: 20px;
-      top: 20px;
+      left: 10px;
+      top: 10px;
     }
   }
 
@@ -558,13 +557,15 @@
 
   .offers .card {
     border-top: 3px $secondary-color solid;
-    padding: 20px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 40px;
 
     & img {
-      margin-top: 15px;
+      margin-top: 5px;
+      height: 100px;
+      width: 100px;
     }
 
     & h1 {
