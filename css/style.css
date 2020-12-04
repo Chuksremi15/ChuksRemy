@@ -627,22 +627,23 @@ p {
     grid-row-gap: 0px;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -300px;
     left: 0;
     opacity: 0;
     padding-top: 140px;
     padding-left: 20px;
     height: 100vh;
-    transition: all 0.5s ease; }
+    transition: none; }
   .nav-menu.active {
     background-color: #fff;
     opacity: 1;
-    transition: all 0.5s ease; }
+    top: 0;
+    transition: all 0.3s ease; }
   .nav-links {
     color: #5e5e5e;
     text-decoration: none;
     font-size: 22px;
-    transition: all 0.5s ease-out;
+    transition: none;
     position: relative;
     text-align: start;
     width: 100%; }
@@ -652,10 +653,10 @@ p {
       background: #f6f6f6;
       left: 0px;
       margin: 45px 0;
-      padding: 0 160px 0 160px;
+      padding: 0 360px 0 360px;
       border-radius: 13px;
       height: 2px;
-      transition: all 0.5s ease;
+      transition: none;
       opacity: 1; }
     .nav-links:hover {
       text-decoration: none;
@@ -802,7 +803,27 @@ p {
       width: 40px;
       border-radius: 13px;
       height: 6px;
-      z-index: 3; }
+      z-index: 3;
+      transition: all 0.3s ease; }
+  .nav-links {
+    color: #5e5e5e;
+    text-decoration: none;
+    font-size: 22px;
+    transition: none;
+    position: relative;
+    text-align: start;
+    width: 100%; }
+    .nav-links::after {
+      content: '';
+      position: absolute;
+      background: #f6f6f6;
+      left: 0px;
+      margin: 45px 0;
+      padding: 0 160px 0 160px;
+      border-radius: 13px;
+      height: 2px;
+      transition: none;
+      opacity: 1; }
   .showcase {
     height: 800px;
     background-color: #191a1d;
