@@ -696,16 +696,17 @@
   .about-image {
     background-color: $background-gray;
     position: relative;
-    width: 350px;
+    width: 330px;
     margin: 0 auto;
     height: 500px;
     border-radius: 5px;
 
     & > img {
       position: absolute;
+      width: 324px;
       height: 500px;
-      left: 6px;
-      top: 6px;
+      left: 3px;
+      top: 3px;
     }
   }
 
