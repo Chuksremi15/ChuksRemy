@@ -77,6 +77,23 @@
 img {
   border-radius: 5px; }
 
+.sqaure-image {
+  overflow: hidden;
+  height: 250px;
+  /* padding controls height. will always be perfectly sqaure regardless of width */
+  padding: 50% 0;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px; }
+  .sqaure-image > img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: -80px;
+    border-radius: 5px; }
+
 .nav-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -195,7 +212,7 @@ img {
     content: '';
     position: absolute;
     height: 100px;
-    top: 300px;
+    top: 294px;
     right: 0;
     left: 0;
     background-color: #191a1d;
@@ -378,7 +395,7 @@ p {
     content: '';
     position: absolute;
     height: 100px;
-    top: 700px;
+    top: 694px;
     right: 0;
     left: 0;
     background-color: #191a1d;
@@ -476,7 +493,7 @@ p {
     content: '';
     position: absolute;
     height: 100px;
-    top: -50px;
+    top: -44px;
     right: 0;
     left: 0;
     background-color: #191a1d;
