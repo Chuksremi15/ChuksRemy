@@ -86,9 +86,7 @@ img {
   cursor: pointer;
   border-radius: 5px; }
   .sqaure-image > img {
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 150%;
+    width: 150%;
     position: absolute;
     top: 0;
     left: -80px;
@@ -317,7 +315,7 @@ img {
     color: #5e5e5e;
     line-height: 160%;
     margin-bottom: 15px;
-    text-align: start; }
+    text-align: justify; }
   .about-content div .photo-caption {
     margin-top: 30px;
     font-size: 16px; }
@@ -1040,15 +1038,16 @@ p {
   .about-image {
     background-color: #f6f6f6;
     position: relative;
-    width: 350px;
+    width: 330px;
     margin: 0 auto;
     height: 500px;
     border-radius: 5px; }
     .about-image > img {
       position: absolute;
+      width: 324px;
       height: 500px;
-      left: 6px;
-      top: 6px; }
+      left: 3px;
+      top: 3px; }
   .about-services {
     margin-bottom: 20px;
     margin-top: 60px; }
